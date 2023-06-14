@@ -1,0 +1,23 @@
+version: '3.7'
+
+services:
+  server:
+    image: lehanncronje/server:1.0
+    ports:
+      - "8080:8080"
+    restart: always
+    networks:
+      - backend
+
+  client:
+    image: lehanncronje/client:1.0
+    ports:
+      - "3000:80"
+    restart: always
+    depends_on:
+      - server
+    networks:
+      - backend
+
+networks:
+  backend:
