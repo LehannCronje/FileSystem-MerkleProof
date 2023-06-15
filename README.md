@@ -8,9 +8,9 @@ Given is a solution to a server and client implementation with a Merkle Tree int
 4. The client will start up on `localhost:3000` for you to test the uploading system.
 
 # Projects
-1. merkle-tree-file-client: Inside the directory there is a README.md explaining the project.
-2. merkle-tree-file-system: Inside the directory there is a README.md explaining the project.
-3. rust_server: Inside the directory there is a README.md explaining the project. (This is a partial implementation)
+1. `./merkle-tree-file-client/`: Inside the directory there is a `README.md` explaining the project.
+2. `./merkle-tree-file-system/`: Inside the directory there is a `README.md` explaining the project.
+3. `./rust_server/`: Inside the directory there is a `README.md` explaining the project. (This is a partial implementation)
 
 # My Approach
 
