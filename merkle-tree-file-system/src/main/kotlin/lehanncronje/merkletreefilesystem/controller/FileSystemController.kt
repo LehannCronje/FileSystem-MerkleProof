@@ -83,7 +83,7 @@ class FileSystemController {
     @PostMapping("/tree/tamper")
     fun tamper(): ResponseEntity<String> {
         runCatching {
-            merkleTree.leafs[1].hash = "Tampered Hash"
+            merkleTree.leafs[0].hash = "Tampered Hash"
             merkleTree.recreate()
         }.onFailure {
             return ResponseEntity.internalServerError().build()

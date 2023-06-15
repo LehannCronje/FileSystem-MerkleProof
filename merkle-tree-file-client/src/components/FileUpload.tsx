@@ -190,8 +190,8 @@ const FilesUpload: React.FC = () => {
 
             <div className="row mb-3 mt-3">
                 <div className="col-12 d-flex justify-content-between">
-                    <button className="btn btn-warning" onClick={tamper}>Tamper with Tree</button>
-                    <button className="btn btn-danger" onClick={destroyTree}>Destroy Tree</button>
+                    <button className="btn btn-warning" disabled={!fileInfos} onClick={tamper}>Tamper with Tree</button>
+                    <button className="btn btn-danger" disabled={!fileInfos} onClick={destroyTree}>Destroy Tree</button>
                 </div>
             </div>
         </div>
