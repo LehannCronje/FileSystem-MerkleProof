@@ -26,7 +26,7 @@ After I understood the application of a Merkle Tree and its use cases, I aimed t
 4. I then moved over to the client and implemented the root hash generation from the initial given hashes and the regeneration of the merkle root hash from the proof received from the server on file download.
 
 ## Refinement
-With an implementation that was working I then moved forward to refine it to a point that I felt comfortable with. I did this by refactoring the code. One large refactor during this step was the changing of the Merkle Tree appoach I took. My first implementation utilised a `List<List<String>>` implementation, where I would add each hash in a 2-Dimensional list. Using this approach, I had to reconstruct the array each time I wanted to calculate the proof.
+With an implementation that was working, I then moved forward to refine it to a point that I felt comfortable with. I did this by refactoring the code. One large refactor during this step was the changing of the Merkle Tree appoach I took. My first implementation utilised a `List<List<String>>` implementation, where I would add each hash in a 2-Dimensional list. Using this approach, I had to reconstruct the array each time I wanted to calculate the proof.
 
 From this I changed it to the current implementation, which uses Objects to build the tree. Where a `Tree` consists of `Nodes` and each `Node` consists of a (`hash`, `leftChild`, `rightChild`, `parent`).
 
